@@ -9,6 +9,7 @@ package more.practice;
  *
  * @author divineDavis
  */
+import java.util.Scanner;
 public class MorePractice {
 
     /**
@@ -112,6 +113,29 @@ public class MorePractice {
         {
             int result = num1 + num2 + num3;
             System.out.println(result);
+        }
+        
+        int age;
+        Scanner in = new Scanner(System.in);
+        System.out.println("Please enter your age: ");
+        
+        age = in.nextInt();
+        
+        if (age <= 12 && age > 0)
+        {
+            System.out.println("You are a child. Pay $12");
+        }
+        else if (age > 12 && age < 20)
+        {
+            System.out.println("You are a teenager.Pay $20");
+        }
+        else if (age >= 20)
+        {
+            System.out.println("You are a adult. Pay $30");
+        }
+        else
+        {
+            System.out.println("Please enter an age greater than 0");
         }
         
     }
