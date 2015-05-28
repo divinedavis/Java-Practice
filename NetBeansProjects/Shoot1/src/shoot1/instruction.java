@@ -42,22 +42,22 @@ public class instruction extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 204, 204));
         setBounds(new java.awt.Rectangle(100, 100, 0, 0));
-        setFont(new java.awt.Font("Arial Black", 1, 24));
+        setFont(new java.awt.Font("Arial Black", 1, 24)); // NOI18N
         setForeground(new java.awt.Color(255, 51, 0));
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 24));
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel1.setText("             Welcome - Shoot Balloons and Learn Algorithms ");
 
         jScrollPane1.setBackground(new java.awt.Color(255, 204, 204));
         jScrollPane1.setForeground(new java.awt.Color(0, 204, 51));
-        jScrollPane1.setFont(new java.awt.Font("Tahoma", 1, 12));
+        jScrollPane1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
 
         jTextArea1.setBackground(new java.awt.Color(204, 204, 204));
         jTextArea1.setColumns(20);
-        jTextArea1.setFont(new java.awt.Font("Gautami", 1, 14));
+        jTextArea1.setFont(new java.awt.Font("Gautami", 1, 14)); // NOI18N
         jTextArea1.setForeground(new java.awt.Color(102, 0, 0));
         jTextArea1.setRows(5);
-        jTextArea1.setText("Welcome!  This game is designed to learn Basics of Algorithm Design.\n===================================================================================================================\n    Ballons are being dropped from the ceilings (initially only 100 balloons) \n    You have to shoot the ballons on the air.\n    If 10 ballons reach the floor, the game is over- You will loose the game.\n===================================================================================================================\nThe game is played in two phases:\nPhase1: There are some errors in the game program. In this phase you are not playing but actually correcting the game. \nYou have to find the errors and correct the algorithms. Only after correcting the errors you can play the game in phase 2.\nPhase 2:  You will be given three chances. At any time, you may stop the game and opt for quiz time.\nIf you answer the questions correctly you may get some advantages (e.g. you may slow down the dropping speed).\n\t");
+        jTextArea1.setText("Welcome!  This game is designed to learn Basics of Algorithm Design.\n===================================================================================================================\n    Ballons are being dropped from the ceilings (initially only 100 balloons) \n    You have to shoot the ballons on the air.\n    If 10 ballons reach the floor, the game is over- You will loose the game.\n===================================================================================================================\nThe game is played in two phases:\nPhase1: \nThere are some errors in the game program. \nIn this phase you are not playing but actually correcting the game. \nYou have to find the errors and correct the algorithms. \nOnly after correcting the errors you can play the game in phase 2.\n\nPhase 2:  \nYou will be given three chances. \nAt any time, you may stop the game and opt for quiz time.\nIf you answer the questions correctly you may get some advantages (e.g. you may slow down the dropping speed).\n\t");
         jTextArea1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jScrollPane1.setViewportView(jTextArea1);
 
@@ -101,7 +101,7 @@ public class instruction extends javax.swing.JFrame {
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 335, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(startB, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
