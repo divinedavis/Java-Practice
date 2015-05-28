@@ -15,13 +15,17 @@ public class MorePractice {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        
+        //Declaring some variables, not much different from other languages
         byte byt = 99;
         short sht = 24513;
         int integ = 456767133;
         long lng = 1234578696;
         
+        //I think that the printing of strings is too long in Java. Using this IDE doesnt make it any simpler
         System.out.println("Byte: " + byt + "\nShort: " + sht + "\nInt: " + integ + "\nLong: " + lng);
         
+        //Practicing with arrays
         int weights [] = new int [100];
         
         weights [0] = 125;
@@ -35,8 +39,10 @@ public class MorePractice {
         weights [8] = 189;
         weights [9] = 112;
         
+        //I'm spoiled by Xcode, I find doing this is very tedious
         System.out.println(weights[0] + " " + weights[1] + " " + weights[2]);
         
+        //Re-declaring elements in an array
         weights [4] = 111;
         weights [5] = 123;
         
@@ -46,6 +52,7 @@ public class MorePractice {
         int num = weights [5];
         
         int sum = 0;
+        //Using a loop to add every element in the array
         for (int i = 0; i < 10; i++)
         {
             sum = sum + weights[i];
@@ -60,8 +67,41 @@ public class MorePractice {
         int multiplication = num1 * num2;
         int modulur = num1 % num2;
         
-        System.out.println("Sum: " + summation + " Subtraction:" + subtraction + " Multiplication: " + multiplication + " Mondulur: "
+        //The novice way of making a formatted string statement
+        System.out.println("Sum: " + summation + " Subtraction:" + subtraction + " Multiplication: " + multiplication + " Modulur: "
         + modulur);
+        
+        if (num1 == num2)
+        {
+            System.out.println("Number 1 is equal to number 2");
+        }
+        
+        if (num1 != num2)
+        {
+            System.out.println("Number 1 is not equal to number 2");
+        }
+        
+        if (num1 > num2)
+        {
+            System.out.println("Number 1 is greater than number 2");
+        }
+        
+        if (num1 < num2)
+        {
+            System.out.println("Number 1 is less than number 2");
+        }
+        
+        if (num1 >= num2)
+        {
+            System.out.println("Number 1 is greater than or equal to number 2");
+        }
+        
+        if (num1 <= num2)
+        {
+            System.out.println("Number 1 is less than or equal to number 2");
+        }
+        
+        
         
     }
     
