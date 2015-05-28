@@ -131,7 +131,7 @@ public class MorePractice {
         }
         else if (age >= 20)
         {
-            System.out.println("You are a adult. Pay $30");
+            System.out.println("You are an adult. Pay $30");
         }
         else
         {
