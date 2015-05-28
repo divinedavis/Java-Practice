@@ -44,7 +44,7 @@ public class GameEnvion extends JFrame {
     private void trialGame(){
        createBoard();
        //b2.setDropBallSpeed(2);
-       int result = JOptionPane.showConfirmDialog(this, "Do you want to play a TRIAL GAME?" , "Trial Game", JOptionPane.YES_NO_CANCEL_OPTION);
+       int result = JOptionPane.showConfirmDialog(this, "Do you want to play a trial game?" , "Trial Game", JOptionPane.YES_NO_CANCEL_OPTION);
        if (result == JOptionPane.YES_OPTION){
            b2.start();
        } else if (result == JOptionPane.NO_OPTION){
