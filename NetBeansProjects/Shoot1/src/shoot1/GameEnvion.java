@@ -44,7 +44,7 @@ public class GameEnvion extends JFrame {
     private void trialGame(){
        createBoard();
        //b2.setDropBallSpeed(2);
-       int result = JOptionPane.showConfirmDialog(this, "Do you want to play a trial game?" , "Trial Game", JOptionPane.YES_NO_CANCEL_OPTION);
+       int result = JOptionPane.showConfirmDialog(this, "Do you want to play a trial game?" , "Practice", JOptionPane.YES_NO_CANCEL_OPTION);
        if (result == JOptionPane.YES_OPTION){
            b2.start();
        } else if (result == JOptionPane.NO_OPTION){
@@ -67,9 +67,9 @@ public class GameEnvion extends JFrame {
         state++;
         createBoard();
         switch (state) {
-            case 1:  JOptionPane.showMessageDialog(null, "Phase 1: "+ state+ "===> Jonny wrote the algorithm- he made a mistake: Find the error and fix it! <<Press Q to quit>>");
+            case 1:  JOptionPane.showMessageDialog(null, "Phase 1: " + " Jonny wrote the algorithm and he made a mistake: Find the error and fix it! <<Press Q to quit>>");
                      break;
-            case 2:  JOptionPane.showMessageDialog(null, "Phase 1: "+ state+ "===> Okay, Jonny made another mistake: find it and fix it again!<<Press Q to quit>>");
+            case 2:  JOptionPane.showMessageDialog(null, "Phase 1: " + " Okay, Jonny made another mistake: find it and fix it again! <<Press Q to quit>>");
                      break;                
             default: {}; // do these if expr != any above
         }
@@ -79,7 +79,7 @@ public class GameEnvion extends JFrame {
     private void phase2(){     
         gameNo++;
         createBoard();
-        JOptionPane.showMessageDialog(null, "Game Number : "+ gameNo+ "  ===> Ready to start the game? Press ok!");
+        JOptionPane.showMessageDialog(null, "Game Number : "+ gameNo+ "Ready to start the game? Press ok!");
         if (p1SB!=null) p1SB.dispose();
         setRealGame();
         b2.start();
@@ -96,18 +96,18 @@ public class GameEnvion extends JFrame {
        switch (gameNo) {
             case 1:  b2.setDropBallSpeed(8);break;
             case 2:  if (correct[3]){
-                        JOptionPane.showMessageDialog(null, "Congratulations!. Since you answered correctly, the planes will bomb slowly");
+                        JOptionPane.showMessageDialog(null, "Congratulations! Since you answered correctly, the planes will drop bombs slowly");
                          b2.incBallAddSpeed(40);
                      } else {
-                        JOptionPane.showMessageDialog(null, "Sorry!. Since your answer was wrong, the planes will drop bombs very quickly");
+                        JOptionPane.showMessageDialog(null, "Sorry! Since your answer was wrong, the planes will drop bombs very fast");
                          b2.incBallAddSpeed(-40);
                      }
                      break;
             case 3:  if (correct[4]){
-                        JOptionPane.showMessageDialog(null, "Congratulations!. Since you answered correctly, only 2 planes will bomb at a time");
+                        JOptionPane.showMessageDialog(null, "Congratulations! Since you answered correctly, only 2 planes will bomb at a time");
                         b2.setNoOfBalls(2);
                      } else {
-                        JOptionPane.showMessageDialog(null, "Sorry!. You didn't answer correctly, 6 Planes will bomb at a time");
+                        JOptionPane.showMessageDialog(null, "Sorry! You didn't answer correctly, 6 Planes will bomb at a time");
                         b2.setNoOfBalls(6);
                      }
                      break;
@@ -130,13 +130,13 @@ public class GameEnvion extends JFrame {
         setVisible(false);
         totShot += b2.shot();
         if (b2.cwon()){
-            JOptionPane.showMessageDialog(null, "GAME FINISHED!!!! The Village was bombarded - try to help the next village.");
+            JOptionPane.showMessageDialog(null, "GAME FINISHED!!!! The Village was bombarded, try to help the next village.");
             JOptionPane.showMessageDialog(null, "In the last game you destroyed " +b2.shot()+
                                        " bombs! So far you have destroyed " + totShot+ " bombs.");
         }else{
-            JOptionPane.showMessageDialog(null, "WELDONE!!!! The Planes flew away: Only " + b2.landed() + " reached the sand - Village is saved: You won the Game!!"); 
+            JOptionPane.showMessageDialog(null, "WELL DONE!!!! The Planes flew away: Only " + b2.landed() + " reached the sand, the village is saved. You won the Game!"); 
         }
-        JOptionPane.showMessageDialog(null,"TRIAL GAME is over! You are in PHASE1 now. You may need to FIX some ERRORS in the game <<if you know the error already press Q to quit the current game"); 
+        JOptionPane.showMessageDialog(null,"Trial game is over! You are in Phase 1 now. You may need to Fix some ERRORS in the game <<if you know the error already press Q to quit the current game"); 
         phase1();
     }    
     
@@ -148,10 +148,10 @@ public class GameEnvion extends JFrame {
             return;
         }
         switch (state) {
-            case 1:  JOptionPane.showMessageDialog(null, "Phase 1: "+ state+ "===> GAME OVER: Have you found the ERROR?: Unable to FIRE the GUN! -help Jonny to fix it now!!");
+            case 1:  JOptionPane.showMessageDialog(null, "Phase 1: "+ state+ "GAME OVER: Have you found the ERROR?: Unable to FIRE the GUN! -help Jonny to fix it now!!");
                      qu1();
                      break;
-            case 2:  JOptionPane.showMessageDialog(null, "Phase 1: "+ state+ "===> GAME OVER: Have you found the ERROR? The LEFT and RIGHT ARROW Keys are moving the GUN in opposite directions!!! - help Jonny again");
+            case 2:  JOptionPane.showMessageDialog(null, "Phase 1: "+ state+ "GAME OVER: Have you found the ERROR? The LEFT and RIGHT ARROW Keys are moving the GUN in opposite directions!!! - help Jonny again");
                      if (p1SB != null) p1SB.dispose();
                      qu2();
                      break;                
