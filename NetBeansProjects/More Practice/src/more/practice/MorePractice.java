@@ -41,6 +41,16 @@ public class MorePractice {
         weights [5] = 123;
         
         System.out.println(weights[4] + " " + weights[5] + " " );
+        
+        weights [5] = 100;
+        int num = weights [5];
+        
+        int sum = 0;
+        for (int i = 0; i < 10; i++)
+        {
+            sum = sum + weights[i];
+            System.out.println("Sum: " + sum);
+        }
     }
     
 }
