@@ -46,7 +46,7 @@ public class instruction extends javax.swing.JFrame {
         setForeground(new java.awt.Color(255, 51, 0));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        jLabel1.setText("             Welcome - Shoot Balloons and Learn Algorithms ");
+        jLabel1.setText("             Welcome - Shoot Balloons While You Learn Algorithms ");
 
         jScrollPane1.setBackground(new java.awt.Color(255, 204, 204));
         jScrollPane1.setForeground(new java.awt.Color(0, 204, 51));
@@ -88,7 +88,7 @@ public class instruction extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(79, 79, 79)
                 .addComponent(jLabel1)
-                .addContainerGap(98, Short.MAX_VALUE))
+                .addContainerGap(31, Short.MAX_VALUE))
             .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 800, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 271, javax.swing.GroupLayout.PREFERRED_SIZE)
