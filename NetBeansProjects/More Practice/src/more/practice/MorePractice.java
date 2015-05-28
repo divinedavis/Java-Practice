@@ -51,6 +51,18 @@ public class MorePractice {
             sum = sum + weights[i];
             System.out.println("Sum: " + sum);
         }
+        
+        int num1 = 10;
+        int num2 = 15;
+        
+        int summation = num1 + num2;
+        int subtraction = num1 = num2;
+        int multiplication = num1 * num2;
+        int modulur = num1 % num2;
+        
+        System.out.println("Sum: " + summation + " Subtraction:" + subtraction + " Multiplication: " + multiplication + " Mondulur: "
+        + modulur);
+        
     }
     
 }
