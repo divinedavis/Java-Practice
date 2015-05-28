@@ -101,7 +101,18 @@ public class MorePractice {
             System.out.println("Number 1 is less than or equal to number 2");
         }
         
+        int num3 = 20;
         
+        if ((num1 == num2) && (num1 > num3) && (num2 > num3))
+        {
+            int result = num1 * num2 * num3;
+            System.out.println(result);
+        }
+        else
+        {
+            int result = num1 + num2 + num3;
+            System.out.println(result);
+        }
         
     }
     
