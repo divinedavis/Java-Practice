@@ -85,25 +85,25 @@ public class ques1 extends javax.swing.JFrame {
         jTextArea1.setBackground(new java.awt.Color(51, 255, 51));
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
-        jTextArea1.setText("cin >> key;\nif (key == 'B')\n      fireGun();");
+        jTextArea1.setText("cin >> key;\n\nif (key == 'B')\n      fireGun();");
         jScrollPane1.setViewportView(jTextArea1);
 
         jTextArea2.setBackground(new java.awt.Color(51, 255, 51));
         jTextArea2.setColumns(20);
         jTextArea2.setRows(5);
-        jTextArea2.setText("cin >> key;\nkey= 'B';\nfireGun();\n");
+        jTextArea2.setText("cin >> key;\n\nkey= 'B';\n\nfireGun();\n");
         jScrollPane2.setViewportView(jTextArea2);
 
         jTextArea3.setBackground(new java.awt.Color(51, 255, 51));
         jTextArea3.setColumns(20);
         jTextArea3.setRows(5);
-        jTextArea3.setText("cin >> key;\nfireGun() if (key == 'B');\n\n");
+        jTextArea3.setText("cin >> key;\n\nfireGun() if (key == 'B');\n\n");
         jScrollPane3.setViewportView(jTextArea3);
 
         jTextArea7.setBackground(new java.awt.Color(51, 255, 51));
         jTextArea7.setColumns(20);
         jTextArea7.setRows(5);
-        jTextArea7.setText("cin >> key;\nfireGun();");
+        jTextArea7.setText("cin >> key;\n\nfireGun();");
         jScrollPane7.setViewportView(jTextArea7);
 
         jButton2.setBackground(new java.awt.Color(255, 51, 51));

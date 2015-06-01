@@ -190,7 +190,7 @@
                 </Property>
                 <Property name="columns" type="int" value="20"/>
                 <Property name="rows" type="int" value="5"/>
-                <Property name="text" type="java.lang.String" value="cin &gt;&gt; key;&#xa;if (key == &apos;B&apos;)&#xa;      fireGun();"/>
+                <Property name="text" type="java.lang.String" value="cin &gt;&gt; key;&#xa;&#xa;if (key == &apos;B&apos;)&#xa;      fireGun();"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -209,7 +209,7 @@
                 </Property>
                 <Property name="columns" type="int" value="20"/>
                 <Property name="rows" type="int" value="5"/>
-                <Property name="text" type="java.lang.String" value="cin &gt;&gt; key;&#xa;key= &apos;B&apos;;&#xa;fireGun();&#xa;"/>
+                <Property name="text" type="java.lang.String" value="cin &gt;&gt; key;&#xa;&#xa;key= &apos;B&apos;;&#xa;&#xa;fireGun();&#xa;"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -228,7 +228,7 @@
                 </Property>
                 <Property name="columns" type="int" value="20"/>
                 <Property name="rows" type="int" value="5"/>
-                <Property name="text" type="java.lang.String" value="cin &gt;&gt; key;&#xa;fireGun() if (key == &apos;B&apos;);&#xa;&#xa;"/>
+                <Property name="text" type="java.lang.String" value="cin &gt;&gt; key;&#xa;&#xa;fireGun() if (key == &apos;B&apos;);&#xa;&#xa;"/>
               </Properties>
             </Component>
           </SubComponents>
@@ -247,7 +247,7 @@
                 </Property>
                 <Property name="columns" type="int" value="20"/>
                 <Property name="rows" type="int" value="5"/>
-                <Property name="text" type="java.lang.String" value="cin &gt;&gt; key;&#xa;fireGun();"/>
+                <Property name="text" type="java.lang.String" value="cin &gt;&gt; key;&#xa;&#xa;fireGun();"/>
               </Properties>
             </Component>
           </SubComponents>
