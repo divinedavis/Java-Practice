@@ -63,7 +63,7 @@ public class quess41 extends javax.swing.JFrame {
         setBackground(new java.awt.Color(204, 255, 204));
         setBounds(new java.awt.Rectangle(100, 100, 0, 0));
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14));
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(153, 0, 0));
         jLabel1.setText("QUESTION 3:  Which of the following algorithm segment can be used to implement the above rule.");
 
@@ -71,7 +71,7 @@ public class quess41 extends javax.swing.JFrame {
         jPanel1.setBorder(new javax.swing.border.MatteBorder(null));
 
         jButton1.setBackground(new java.awt.Color(255, 51, 51));
-        jButton1.setFont(new java.awt.Font("Tahoma", 1, 14));
+        jButton1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton1.setText("1");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -86,7 +86,7 @@ public class quess41 extends javax.swing.JFrame {
         jScrollPane7.setViewportView(jTextArea7);
 
         jButton2.setBackground(new java.awt.Color(255, 51, 51));
-        jButton2.setFont(new java.awt.Font("Tahoma", 1, 14));
+        jButton2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton2.setText("2");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -95,7 +95,7 @@ public class quess41 extends javax.swing.JFrame {
         });
 
         jButton3.setBackground(new java.awt.Color(255, 51, 51));
-        jButton3.setFont(new java.awt.Font("Tahoma", 1, 14));
+        jButton3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton3.setText("3");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -104,7 +104,7 @@ public class quess41 extends javax.swing.JFrame {
         });
 
         jButton4.setBackground(new java.awt.Color(255, 51, 51));
-        jButton4.setFont(new java.awt.Font("Tahoma", 1, 14));
+        jButton4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton4.setText("4");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -151,7 +151,6 @@ public class quess41 extends javax.swing.JFrame {
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addComponent(jButton2)
                         .addGap(28, 28, 28)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jScrollPane10, javax.swing.GroupLayout.PREFERRED_SIZE, 306, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 306, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -177,9 +176,9 @@ public class quess41 extends javax.swing.JFrame {
 
         jTextArea4.setBackground(new java.awt.Color(255, 204, 204));
         jTextArea4.setColumns(20);
-        jTextArea4.setFont(new java.awt.Font("Mongolian Baiti", 1, 14));
+        jTextArea4.setFont(new java.awt.Font("Mongolian Baiti", 1, 14)); // NOI18N
         jTextArea4.setRows(5);
-        jTextArea4.setText("Currently, there are 4 Planes bombing the village.\n\nIf you answer the following question correctly, 2 planes will flew away- that is, only 2 planes will bomb.\nBut, if you are wrong another 2 planes will join them- that is, 6 planes will start to bomb.\n\nAssume that the variable noOFplanes is currently set to 4.\n\nSuppose, the variable correctAnswer is already set to the correct answer of the current problem.\n\n");
+        jTextArea4.setText("Currently, there are 4 Planes bombing the village.\n\nIf you answer the following question correctly, 2 planes will flew away that is, only 2 planes will bomb.\n\nBut, if you are wrong another 2 planes will join them- that is, 6 planes will start to bomb.\n\nAssume that the variable noOFplanes is currently set to 4.\n\nSuppose, the variable correctAnswer is already set to the correct answer of the current problem.\n\n");
         jScrollPane4.setViewportView(jTextArea4);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -202,7 +201,7 @@ public class quess41 extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 384, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
