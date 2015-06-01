@@ -21,7 +21,7 @@ public class instruction extends javax.swing.JFrame {
     public instruction(String myName) {
         initComponents();
         //jScrollPane1.add(jTextArea1);
-        //jLabel4.setText("Hello "+ myName +"!");
+        jLabel1.setText("Welcome, "+ myName +"!" + " - Here You Will Learn Programming");
     }
 
     /** This method is called from within the constructor to
