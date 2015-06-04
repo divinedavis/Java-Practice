@@ -1,10 +1,6 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 
-/*
- * ques1.java
+
+/* ques1.java
  *
  * Created on Nov 15, 2011, 4:45:07 PM
  */
@@ -15,6 +11,7 @@ import javax.swing.ButtonGroup;
 /**
  *
  * @author s.mohanarajah0901
+ * @author divinedavis
  */
 public class ques1 extends javax.swing.JFrame {
     private static GameEnvion GE;
@@ -22,7 +19,7 @@ public class ques1 extends javax.swing.JFrame {
     
     /** Creates new form ques1 */
     public ques1(GameEnvion GE) {
-        this.GE=GE;
+        this.GE = GE;
         group.add(jButton1);
         group.add(jButton2);
         group.add(jButton3);
