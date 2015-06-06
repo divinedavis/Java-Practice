@@ -61,11 +61,11 @@ public class ques1 extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 51, 51));
-        jLabel1.setText("Question 1: Jonny made a mistake in the algorithm. Pressing the key 'B' should fire the Gun. But, it is not working.");
+        jLabel1.setText("Question 1: Jonny made a mistake in the algorithm. Pressing the key 'B' should fire the gun. But, it is NOT working.");
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(153, 0, 51));
-        jLabel2.setText("Help Jonny to fix the error. Which of the following C++ segment could be used to fire the gun (fireGun() ) when the key 'B' is pressed?");
+        jLabel2.setText("Fix the error. Which C++ code could be used to fire the gun 'fireGun()' when 'B' is pressed?");
 
         jPanel1.setBackground(new java.awt.Color(204, 255, 204));
         jPanel1.setBorder(new javax.swing.border.MatteBorder(null));
