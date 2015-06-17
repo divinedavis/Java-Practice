@@ -64,7 +64,7 @@ public class instruction extends javax.swing.JFrame {
         jButton2.setBackground(new java.awt.Color(0, 255, 102));
         jButton2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jButton2.setForeground(new java.awt.Color(255, 0, 51));
-        jButton2.setText("CLOSE INSTRUCTION");
+        jButton2.setText("ClOSE");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -74,7 +74,7 @@ public class instruction extends javax.swing.JFrame {
         startB.setBackground(new java.awt.Color(0, 255, 102));
         startB.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         startB.setForeground(new java.awt.Color(255, 0, 51));
-        startB.setText("START GAME");
+        startB.setText("START");
         startB.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 startBActionPerformed(evt);
