@@ -164,11 +164,11 @@ public class GameEnvion extends JFrame {
         setVisible(false);
         totShot+=b2.shot();
         if (b2.cwon()){
-            JOptionPane.showMessageDialog(null, "GAME FINISHED!!!! The Village was bombarded- help the next village.");
+            JOptionPane.showMessageDialog(null, "The village was bombarded, help the next village.");
             JOptionPane.showMessageDialog(null, "In the last game you destroyed " +b2.shot()+
                                        " bombs! So far you have destroyed " + totShot+ " bombs.");
         }else{
-            JOptionPane.showMessageDialog(null, "WELDONE!!!! The Planes flew away: Only " + b2.landed() + " reached the sand - Village is saved: You won the Game!!");
+            JOptionPane.showMessageDialog(null, "Well done, the Planes flew away. Only " + b2.landed() + " reached the sand. You saved the village.");
             gScore+=gIncScore;
             gWin++;
         }
