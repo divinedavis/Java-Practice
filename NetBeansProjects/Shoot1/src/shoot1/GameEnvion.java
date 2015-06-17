@@ -67,9 +67,9 @@ public class GameEnvion extends JFrame {
         state++;
         createBoard();
         switch (state) {
-            case 1:  JOptionPane.showMessageDialog(null, "Phase 1: " + " Jonny wrote the algorithm and he made a mistake: Find the error and fix it! <<Press Q to quit>>");
+            case 1:  JOptionPane.showMessageDialog(null, "Phase 1: " + " Jonny wrote the algorithm and made a mistake, find the error and fix it! <<Press Q to quit>>");
                      break;
-            case 2:  JOptionPane.showMessageDialog(null, "Phase 1: " + " Okay, Jonny made another mistake: find it and fix it again! <<Press Q to quit>>");
+            case 2:  JOptionPane.showMessageDialog(null, "Phase 1: " + " Okay, Jonny made another mistake, find it and fix it again! <<Press Q to quit>>");
                      break;                
             default: {}; // do these if expr != any above
         }
@@ -99,15 +99,15 @@ public class GameEnvion extends JFrame {
                         JOptionPane.showMessageDialog(null, "Congratulations! Since you answered correctly, the planes will drop bombs slowly");
                          b2.incBallAddSpeed(40);
                      } else {
-                        JOptionPane.showMessageDialog(null, "Sorry! Since your answer was wrong, the planes will drop bombs very fast");
+                        JOptionPane.showMessageDialog(null, "Sorry! Your answer was wrong, the planes will drop bombs very fast");
                          b2.incBallAddSpeed(-40);
                      }
                      break;
             case 3:  if (correct[4]){
-                        JOptionPane.showMessageDialog(null, "Congratulations! Since you answered correctly, only 2 planes will bomb at a time");
+                        JOptionPane.showMessageDialog(null, "Congratulations! Since you answered correctly, only 2 planes will drop bombs at a time");
                         b2.setNoOfBalls(2);
                      } else {
-                        JOptionPane.showMessageDialog(null, "Sorry! You didn't answer correctly, 6 Planes will bomb at a time");
+                        JOptionPane.showMessageDialog(null, "Sorry! You didn't answer correctly, 6 Planes will drop bombs at a time");
                         b2.setNoOfBalls(6);
                      }
                      break;
@@ -148,10 +148,10 @@ public class GameEnvion extends JFrame {
             return;
         }
         switch (state) {
-            case 1:  JOptionPane.showMessageDialog(null, "Phase 1: "+ state+ "GAME OVER: Have you found the ERROR?: Unable to FIRE the GUN! -help Jonny to fix it now!!");
+            case 1:  JOptionPane.showMessageDialog(null, "Phase 1: "+ state+ "GAME OVER: Have you found the error? ");
                      qu1();
                      break;
-            case 2:  JOptionPane.showMessageDialog(null, "Phase 1: "+ state+ "GAME OVER: Have you found the ERROR? The LEFT and RIGHT ARROW Keys are moving the GUN in opposite directions!!! - help Jonny again");
+            case 2:  JOptionPane.showMessageDialog(null, "Phase 1: "+ state+ "GAME OVER: Have you found the error? ");
                      if (p1SB != null) p1SB.dispose();
                      qu2();
                      break;                
