@@ -118,14 +118,14 @@ private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
 private void startBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_startBActionPerformed
     startB.setEnabled(false);
     this.setState(this.ICONIFIED);
-    new GameEnvion(this);
+    new GameEnvironment(this);
 }//GEN-LAST:event_startBActionPerformed
 
     
    
 //* @param args the command line arguments
      
-  //  public static void main(String args[]) {
+  //  public static void main(String args[]) 
        
     
   
