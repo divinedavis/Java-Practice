@@ -13,12 +13,9 @@ import java.util.*;
  */
 public class Main {
  public static String myName;
- public int Score = 0; 
-    /**
-     * @param args the command line arguments
-     */
-
+ public int Score = 0;
  /*
+ I don't really know what this is.
  public static void test1(){ // to test fire
         BulletsTest bT= new BulletsTest(5,10); 
         Bullet b =new Bullet(100, 105, 5, 3, 90);

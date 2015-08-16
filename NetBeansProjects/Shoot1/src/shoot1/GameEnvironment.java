@@ -9,7 +9,7 @@ import javax.swing.*;
  *
  * @author s.mohanarajah0901
  */
-public class GameEnvion extends JFrame {
+public class GameEnvironment extends JFrame {
     private instruction instFrame;
     private Board2 b2;
     private ScoreBoard SB;
@@ -31,7 +31,7 @@ public class GameEnvion extends JFrame {
     private int[] answer = {0,4,2,3,4,4,2,1,3,4}; //first 0 for trial game
     //String[] msg={" ","The bombs are comming down very fast- you may slow down them- answer the next questions!"};
     
-    public GameEnvion(instruction I){
+    public GameEnvironment(instruction I){
         instFrame=I;
         setTitle("Learning Conditional Branching by Shooting Ballons");
         setSize(600, 500);
@@ -251,7 +251,7 @@ public class GameEnvion extends JFrame {
      }
     
    private void showScoreBoard(){
-       final GameEnvion G=this; 
+       final GameEnvironment G=this; 
        if (SB != null) SB.dispose();
        java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
@@ -264,7 +264,7 @@ public class GameEnvion extends JFrame {
     }
    
    private void showP1ScoreBoard(){
-       final GameEnvion G=this;
+       final GameEnvironment G=this;
        if (p1SB != null) p1SB.dispose();
        java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {

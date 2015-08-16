@@ -13,7 +13,7 @@ import java.awt.event.*;
  */
 public class Board2 extends JPanel implements Runnable{
       private boolean cwon=false, pwon=false;
-      private GameEnvion GE; //debug
+      private GameEnvironment GE; //debug
       private int shot=0;
       private int w;
       private int hLimit;
@@ -39,7 +39,7 @@ public class Board2 extends JPanel implements Runnable{
       private boolean quit=false;
       
 
-     public Board2(GameEnvion GE, int state){
+     public Board2(GameEnvironment GE, int state){
         setPreferredSize(new Dimension(600,500));
         this.GE=GE;
         setBackground(Color.YELLOW);

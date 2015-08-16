@@ -17,11 +17,11 @@ import javax.swing.ButtonGroup;
  * @author s.mohanarajah0901
  */
 public class quess4 extends javax.swing.JFrame {
-    private static GameEnvion GE;
+    private static GameEnvironment GE;
     ButtonGroup group = new ButtonGroup();
     
     /** Creates new form ques1 */
-    public quess4(GameEnvion GE) {
+    public quess4(GameEnvironment GE) {
         this.GE=GE;
         group.add(jButton1);
         group.add(jButton2);

@@ -16,8 +16,8 @@ package shoot1;
  */
 public class P1ScoreBoard extends javax.swing.JFrame {
      /** Creates new form ScoreBoard */
-   GameEnvion G;
-    public P1ScoreBoard(GameEnvion G){
+   GameEnvironment G;
+    public P1ScoreBoard(GameEnvironment G){
         this.G=G;
         initComponents();
     }
