@@ -56,6 +56,22 @@ public class GameEnvironment extends JFrame {
                 showEnd();  
     }
     
+     public void trialGameFinished(){
+        phase=1; 
+        remove(b2);
+        setVisible(false);
+        totShot += b2.shot();
+        if (b2.cwon()){
+            JOptionPane.showMessageDialog(null, "GAME FINISHED!!!! The Village was bombarded, try to help the next village.");
+            JOptionPane.showMessageDialog(null, "In the last game you destroyed " +b2.shot()+
+                                       " bombs! So far you have destroyed " + totShot+ " bombs.");
+        }else{
+            JOptionPane.showMessageDialog(null, "WELL DONE!!!! The Planes flew away: Only " + b2.landed() + " reached the sand, the village is saved. You won the Game!"); 
+        }
+        JOptionPane.showMessageDialog(null,"Trial game is over! You are in Phase 1 now. You may need to Fix some ERRORS in the game <<if you know the error already press Q to quit the current game"); 
+        phase1();
+    }   
+    
     private void showEnd(){
         JOptionPane.showMessageDialog(null, "End Session");
         if (instFrame !=null)
@@ -67,9 +83,9 @@ public class GameEnvironment extends JFrame {
         state++;
         createBoard();
         switch (state) {
-            case 1:  JOptionPane.showMessageDialog(null, "Phase 1: " + " Jonny wrote the algorithm and made a mistake, find the error and fix it! <<Press Q to quit>>");
+            case 1:  JOptionPane.showMessageDialog(null, " Jonny wrote the algorithm and made a mistake, find the error and fix it! <<Press Q to quit>>");
                      break;
-            case 2:  JOptionPane.showMessageDialog(null, "Phase 1: " + " Okay, Jonny made another mistake, find it and fix it again! <<Press Q to quit>>");
+            case 2:  JOptionPane.showMessageDialog(null, " Okay, Jonny made another mistake, find it and fix it again! <<Press Q to quit>>");
                      break;                
             default: {}; // do these if expr != any above
         }
@@ -91,6 +107,26 @@ public class GameEnvironment extends JFrame {
         setVisible(true);
         b2.requestFocus();
     }   
+    
+        public void phase1Finished(){
+        remove(b2);
+        setVisible(false);
+        if (state>lastP1State){
+            phase=2;
+            return;
+        }
+        switch (state) {
+            case 1:  JOptionPane.showMessageDialog(null, "Phase 1: "+ state+ "GAME OVER: Have you found the error? ");
+                     qu1();
+                     break;
+            case 2:  JOptionPane.showMessageDialog(null, "Phase 1: "+ state+ "GAME OVER: Have you found the error? ");
+                     if (p1SB != null) p1SB.dispose();
+                     qu2();
+                     break;                
+            default: {}; // do these if expr != any above
+        }
+     }
+    
     
     public void setRealGame(){
        switch (gameNo) {
@@ -124,41 +160,9 @@ public class GameEnvironment extends JFrame {
             phase2Finished();
     }
     
-    public void trialGameFinished(){
-        phase=1; 
-        remove(b2);
-        setVisible(false);
-        totShot += b2.shot();
-        if (b2.cwon()){
-            JOptionPane.showMessageDialog(null, "GAME FINISHED!!!! The Village was bombarded, try to help the next village.");
-            JOptionPane.showMessageDialog(null, "In the last game you destroyed " +b2.shot()+
-                                       " bombs! So far you have destroyed " + totShot+ " bombs.");
-        }else{
-            JOptionPane.showMessageDialog(null, "WELL DONE!!!! The Planes flew away: Only " + b2.landed() + " reached the sand, the village is saved. You won the Game!"); 
-        }
-        JOptionPane.showMessageDialog(null,"Trial game is over! You are in Phase 1 now. You may need to Fix some ERRORS in the game <<if you know the error already press Q to quit the current game"); 
-        phase1();
-    }    
     
-    public void phase1Finished(){
-        remove(b2);
-        setVisible(false);
-        if (state>lastP1State){
-            phase=2;
-            return;
-        }
-        switch (state) {
-            case 1:  JOptionPane.showMessageDialog(null, "Phase 1: "+ state+ "GAME OVER: Have you found the error? ");
-                     qu1();
-                     break;
-            case 2:  JOptionPane.showMessageDialog(null, "Phase 1: "+ state+ "GAME OVER: Have you found the error? ");
-                     if (p1SB != null) p1SB.dispose();
-                     qu2();
-                     break;                
-            default: {}; // do these if expr != any above
-        }
-     }
     
+
     public void phase2Finished(){
         remove(b2);
         setVisible(false);
@@ -206,7 +210,7 @@ public class GameEnvironment extends JFrame {
         return answer;
     }
     private void qu1(){
-        new ques1(this).setVisible(true);
+        new Question1(this).setVisible(true);
     }
      private void qu2(){
         new quess2(this).setVisible(true);
