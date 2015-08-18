@@ -241,7 +241,6 @@ if (GE.answers()[GE.state()]==3)
 GE.giveFeedback(this);
 }//GEN-LAST:event_jButton3ActionPerformed
 
-
     /**
      * @param args the command line arguments
      */
