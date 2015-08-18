@@ -160,9 +160,6 @@ public class GameEnvironment extends JFrame {
             phase2Finished();
     }
     
-    
-    
-
     public void phase2Finished(){
         remove(b2);
         setVisible(false);
@@ -187,6 +184,7 @@ public class GameEnvironment extends JFrame {
     public boolean allOver(){
         return (state==lastState);
     }
+    
     private void displayQ() {
         switch (gameNo) {
             case 1: qu3(); break;
@@ -198,7 +196,7 @@ public class GameEnvironment extends JFrame {
     public boolean[] correct(){
         return correct;
     }
-    
+   
     public void setCorrect(int i, boolean t){
         correct[i]=t;
     }
@@ -206,21 +204,27 @@ public class GameEnvironment extends JFrame {
     public int state(){
         return state;
     }
+    
     public int[] answers(){
         return answer;
     }
+    
     private void qu1(){
         new Question1(this).setVisible(true);
     }
-     private void qu2(){
+    
+    private void qu2(){
         new quess2(this).setVisible(true);
     }
+    
     private void qu3(){
         new quess3(this).setVisible(true);
     }
+    
     private void qu4(){
         new quess4(this).setVisible(true);
     }
+    
     public void giveFeedback(javax.swing.JFrame qframe){
         if (correct[state]){
             score+=incScore;
@@ -235,6 +239,7 @@ public class GameEnvironment extends JFrame {
         else
             giveGFeedback();   
     }
+    
     public void giveP1Feedback(){
         showP1ScoreBoard();
         if (state==lastP1State){
@@ -249,12 +254,12 @@ public class GameEnvironment extends JFrame {
              }
      }
      
-   public void giveGFeedback(){
+    public void giveGFeedback(){
          showScoreBoard();
          nextGame();      
      }
     
-   private void showScoreBoard(){
+    private void showScoreBoard(){
        final GameEnvironment G=this; 
        if (SB != null) SB.dispose();
        java.awt.EventQueue.invokeLater(new Runnable() {
@@ -267,7 +272,7 @@ public class GameEnvironment extends JFrame {
        
     }
    
-   private void showP1ScoreBoard(){
+    private void showP1ScoreBoard(){
        final GameEnvironment G=this;
        if (p1SB != null) p1SB.dispose();
        java.awt.EventQueue.invokeLater(new Runnable() {
@@ -280,7 +285,7 @@ public class GameEnvironment extends JFrame {
        
     }
    
-   public void nextGame(){
+    public void nextGame(){
        setVisible(true);
        if (allOver())
            showEnd();
