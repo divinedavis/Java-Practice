@@ -139,15 +139,15 @@ public class Board2 extends JPanel implements Runnable{
                 break;
            case KeyEvent.VK_LEFT:
                 if (GE.state()==2)
-                    gun.roRight();
+                    gun.moveRight();
                 else
-                    gun.roLeft();
+                    gun.moveLeft();
                 break;
            case KeyEvent.VK_RIGHT:
                 if (GE.state()==2)
-                    gun.roLeft();
+                    gun.moveLeft();
                 else
-                    gun.roRight();
+                    gun.moveRight();
                 break;
            case KeyEvent.VK_Z:
                 if (GE.state()==2)
