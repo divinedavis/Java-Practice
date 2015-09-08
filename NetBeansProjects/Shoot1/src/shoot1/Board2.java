@@ -42,7 +42,7 @@ public class Board2 extends JPanel implements Runnable{
      public Board2(GameEnvironment GE, int state){
         setPreferredSize(new Dimension(600,500));
         this.GE=GE;
-        setBackground(Color.YELLOW);
+        setBackground(Color.blue);
         this.setDoubleBuffered(true);
         Dimension size=GE.getSize();
         w=(int) size.getWidth();
