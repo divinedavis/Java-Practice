@@ -28,7 +28,7 @@ public class Main {
 
  */
  public static void main(String[] args) {
-        myName= JOptionPane.showInputDialog("What's your name?");
+        myName = JOptionPane.showInputDialog("What's your name?");
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new instruction(myName).setVisible(true);
