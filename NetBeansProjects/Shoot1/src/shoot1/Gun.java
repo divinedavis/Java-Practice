@@ -19,10 +19,10 @@ public class Gun {
     private int yPos1;
     private int angle=90;
     private int rLimit=500, lLimit=0; // need to design moving gun
-    private static int speed=5;
+    private static int speed=8;
     private int h=15;
     private int w = 5;
-    private Color c=Color.red;
+    private Color c = Color.red;
     //private Rectangle2D gun;
     private Line2D gun;
     private int bulletSp, bulletDi;
@@ -56,8 +56,8 @@ public class Gun {
     
     public void moveRight(){
         xPos+=speed;
-        if (xPos>rLimit)
-           xPos=rLimit;
+        if (xPos > rLimit)
+           xPos = rLimit;
         xPos1 = xPos;
      }
     
@@ -78,7 +78,7 @@ public class Gun {
 
 
     public void fire(){
-        Bullet b =new Bullet(xPos, yPos1, bulletSp, bulletDi, angle);
+        Bullet b = new Bullet(xPos, yPos1, bulletSp, bulletDi, angle);
         B2.addBullet(b);
     }
 
