@@ -54,7 +54,7 @@ public class Board extends JPanel implements ActionListener {
     public Board() {
         addKeyListener(new TAdapter());
 
-        setBackground(Color.black);
+        setBackground(Color.blue);
 
         ImageIcon iid = new ImageIcon(this.getClass().getResource("dot.png"));
         ball = iid.getImage();
