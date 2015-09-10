@@ -23,7 +23,8 @@ public class JavaIlluminated {
         
         inches = 8;
         
-        System.out.println("Now since the inches is 8, the centimeters is: " + centimeter);
+        double newCentimeter = inches * CM_PER_INCH;
+        System.out.println("Now since the inches is 8, the centimeters is: " + newCentimeter);
         
         
         
