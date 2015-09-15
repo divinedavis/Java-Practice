@@ -77,6 +77,7 @@ public class SimpleDateClient extends JFrame
 
 
     /***** 9. Attempt to set the month to 1 */
+    dateObj.setMonth(1);
 
   }
 
