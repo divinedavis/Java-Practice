@@ -48,7 +48,7 @@ public class Gun {
 
     public void drawGun(Graphics2D g){
          //gun.setRect(xPos, yPos, w, h);
-        g.drawImage(gun, xPos, yPos - 15, 11, 15, null);
+        g.drawImage(gun, xPos, yPos - 15, 15, 18, null);
         //g.fill(gun);
          
      }
