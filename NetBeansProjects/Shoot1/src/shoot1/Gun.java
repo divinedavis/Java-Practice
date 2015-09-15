@@ -7,6 +7,9 @@ package shoot1;
 
 import java.awt.geom.*;
 import java.awt.*;
+import java.io.IOException;
+import javax.imageio.ImageIO;
+import javax.swing.ImageIcon;
 /**
  *
  * @author s.mohanarajah0901
@@ -22,9 +25,9 @@ public class Gun {
     private static int speed=8;
     private int h=15;
     private int w = 5;
-    private Color c = Color.red;
+//    private Color c = Color.red;
     //private Rectangle2D gun;
-    private Line2D gun;
+    private Image gun;
     private int bulletSp, bulletDi;
    
 
@@ -34,17 +37,20 @@ public class Gun {
         xPos=x; yPos=y;
         xPos1=xPos; yPos1=yPos-h1;
         //gun=new Rectangle2D.Double(xPos,yPos,w,h);
-        gun = new Line2D.Double(xPos, yPos,xPos1, yPos1);
+        try {
+            gun = ImageIO.read(Gun.class.getResourceAsStream("/shoot1/Spaceship.png"));
+        } catch (IOException ioe) {
+            System.err.println("Unable to read spaceship file: " + ioe.getMessage());
+            System.exit(1);
+        }
         w=w1; h=h1;
     }
 
     public void drawGun(Graphics2D g){
          //gun.setRect(xPos, yPos, w, h);
-         gun.setLine(xPos, yPos, xPos1, yPos1);
-         g.setStroke(new BasicStroke(w));
-         g.setColor(c);
-         //g.fill(gun);
-         g.draw(gun);
+        g.drawImage(gun, xPos, yPos - 15, 11, 15, null);
+        //g.fill(gun);
+         
      }
 
     public void moveLeft(){

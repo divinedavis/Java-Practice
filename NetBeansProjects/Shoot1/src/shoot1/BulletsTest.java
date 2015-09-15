@@ -15,7 +15,7 @@ public class BulletsTest {
     private int speed;
     private double diameter;
     private ArrayList<Bullet> bulletsA = new ArrayList<Bullet>();
-    private SoundPlayer blast=new SoundPlayer("blast.wav");
+    private SoundPlayer blast = new SoundPlayer("blast.wav");
    
     public BulletsTest (int s, double d){      
         speed=s;
