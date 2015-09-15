@@ -11,7 +11,7 @@ public class SimpleDateClient extends JFrame
 {
   private String action = "";
 
-  private int animationPause = 2; // 2 seconds between animations
+  private int animationPause = 1; // 2 seconds between animations
 
   
   private SimpleDate dateObj; // declare SimpleDate object reference
