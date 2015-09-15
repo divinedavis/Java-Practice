@@ -22,50 +22,57 @@ public class SimpleDateClient extends JFrame
 
     /***** Add your code here *****/
     /**** 1. Instantiate dateObj using an empty argument list  */
+    
     dateObj = new SimpleDate();
 
 
     animate( "Instantiated dateObj - empty argument list" );
 
     /***** 2. Set the month to the month you were born */
-
-
-    //animate( "Set month to birth month" );
-
+    
+    dateObj.setMonth(12);
+    
+    animate( "Set month to birth month" );
+    
+    
 
     /***** 3. Set the day to the day of the month you were born */
-
-
-    //animate( "Set day to birth day" );
+    
+    dateObj.setDay(12);
+ 
+    animate( "Set day to birth day" );
 
 
     /***** 4. Set the year to the year you were born */
-
-
-    //animate( "Set year to birth year" );
+    
+    dateObj.setYear(1991);
+    
+    animate( "Set year to birth year" );
+    
 
 
     /***** 5. Call the nextDay method */
+    
+    dateObj.nextDay();
 
-
-    //animate( "Set the date to the next day" );
+    animate( "Set the date to the next day" );
 
 
     /***** 6. Set the day to 32, an illegal value */
 
-
-    //animate( "Set day to 32" );
+    dateObj.setDay(32);
+    animate( "Set day to 32" );
 
 
     /***** 7. Set the month to 13, an illegal value */
 
-
-    //animate( "Set month to 13" );
+    dateObj.setMonth(13);
+    animate( "Set month to 13" );
 
 
     /***** 8. Assign the value null to dateObj */
 
-
+    dateObj.getDay();
     //animate( "Set object reference to null" );
 
 
@@ -149,4 +156,6 @@ public class SimpleDateClient extends JFrame
     app.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
     app.workWithDates( );
   }
+
+    
 }
