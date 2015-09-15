@@ -73,7 +73,7 @@ public class SimpleDateClient extends JFrame
     /***** 8. Assign the value null to dateObj */
 
     dateObj.getDay();
-    //animate( "Set object reference to null" );
+    animate( "Set object reference to null" );
 
 
     /***** 9. Attempt to set the month to 1 */
