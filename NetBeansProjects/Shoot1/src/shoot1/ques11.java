@@ -62,19 +62,19 @@ public class ques11 extends javax.swing.JFrame {
         setBackground(new java.awt.Color(204, 255, 204));
         setBounds(new java.awt.Rectangle(100, 100, 0, 0));
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14));
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 51, 51));
-        jLabel1.setText("QUESTION 1: Jonny made a mistake in algorithms. Pressing the <UP ARROW> or <B> should fire the Gun. But, neither keys are not working.");
+        jLabel1.setText("                QUESTION 1: By pressing the <UP_ARROW> or <B> button, you should be able to fire the gun. But, neither keys are not working.");
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14));
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(153, 0, 51));
-        jLabel2.setText("Help Jonny to fix the error. Which of the folllowing algorithm segment could fix the error?");
+        jLabel2.setText("                                                                                 Which algorithm segment could fix the error?");
 
         jPanel1.setBackground(new java.awt.Color(204, 255, 204));
         jPanel1.setBorder(new javax.swing.border.MatteBorder(null));
 
         jButton1.setBackground(new java.awt.Color(255, 51, 51));
-        jButton1.setFont(new java.awt.Font("Tahoma", 1, 14));
+        jButton1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton1.setText("1");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -85,29 +85,29 @@ public class ques11 extends javax.swing.JFrame {
         jTextArea1.setBackground(new java.awt.Color(51, 255, 51));
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
-        jTextArea1.setText("key <-- pressed key\nIf (key = UP_ARROW) OR (key = B)\n\tFire the Gun");
+        jTextArea1.setText("key = pressedKey\nIf (key == upArrow) || (key == B)\nfireTheGun");
         jScrollPane1.setViewportView(jTextArea1);
 
         jTextArea2.setBackground(new java.awt.Color(51, 255, 51));
         jTextArea2.setColumns(20);
         jTextArea2.setRows(5);
-        jTextArea2.setText("Key <-- pressed key\nKey <-- UP_ARROW\nKey <-- B\nFire the Gun\n");
+        jTextArea2.setText("Key = pressedKey\nKey = upArrow\nKey = B\nfireTheGun\n");
         jScrollPane2.setViewportView(jTextArea2);
 
         jTextArea3.setBackground(new java.awt.Color(51, 255, 51));
         jTextArea3.setColumns(20);
         jTextArea3.setRows(5);
-        jTextArea3.setText("If (UP_ARROW = B)\n    key <-- pressed key\t\nFire the Gun");
+        jTextArea3.setText("If (upArrow == B)\n    key == pressedKey\t\nfireTheGun");
         jScrollPane3.setViewportView(jTextArea3);
 
         jTextArea7.setBackground(new java.awt.Color(51, 255, 51));
         jTextArea7.setColumns(20);
         jTextArea7.setRows(5);
-        jTextArea7.setText("key <-- pressed key\nFire the Gun");
+        jTextArea7.setText("key = pressedKey\nfireTheGun");
         jScrollPane7.setViewportView(jTextArea7);
 
         jButton2.setBackground(new java.awt.Color(255, 51, 51));
-        jButton2.setFont(new java.awt.Font("Tahoma", 1, 14));
+        jButton2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton2.setText("2");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -116,7 +116,7 @@ public class ques11 extends javax.swing.JFrame {
         });
 
         jButton3.setBackground(new java.awt.Color(255, 51, 51));
-        jButton3.setFont(new java.awt.Font("Tahoma", 1, 14));
+        jButton3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton3.setText("3");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -125,7 +125,7 @@ public class ques11 extends javax.swing.JFrame {
         });
 
         jButton4.setBackground(new java.awt.Color(255, 0, 51));
-        jButton4.setFont(new java.awt.Font("Tahoma", 1, 14));
+        jButton4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton4.setText("4");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -159,7 +159,7 @@ public class ques11 extends javax.swing.JFrame {
                         .addGap(56, 56, 56)
                         .addComponent(jButton2)
                         .addGap(18, 18, 18)
-                        .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 268, Short.MAX_VALUE)))
+                        .addComponent(jScrollPane2)))
                 .addGap(103, 103, 103))
         );
         jPanel1Layout.setVerticalGroup(
@@ -185,17 +185,18 @@ public class ques11 extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(47, 47, 47)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 725, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(250, 250, 250))
-            .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 1049, Short.MAX_VALUE)
                 .addGap(37, 37, 37))
             .addGroup(layout.createSequentialGroup()
-                .addGap(71, 71, 71)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(108, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(47, 47, 47)
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 725, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(71, 71, 71)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
