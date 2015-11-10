@@ -16,8 +16,8 @@ public class MorePractice {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
-        //Declaring some variables, not much different from other languages
+        Scanner sc = new Scanner(System.in);
+        /* //Declaring some variables, not much different from other languages
         byte byt = 99;
         short sht = 24513;
         int integ = 456767133;
@@ -137,7 +137,23 @@ public class MorePractice {
         {
             System.out.println("Please enter an age greater than 0");
         }
+        */
         
+        
+
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+        
+        
+        
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+        
+    
+    
+   
     }
     
 }
