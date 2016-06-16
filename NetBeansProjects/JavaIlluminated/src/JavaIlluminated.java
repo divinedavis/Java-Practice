@@ -12,29 +12,26 @@ public class JavaIlluminated {
 
     public static void main(String[] args) {
 
-//    System.out.println("Programming is not a spectator sport");
-//    
-        
-//        final double CM_PER_INCH = 2.54;
-//        int inches = 0;
-//        double centimeter = inches * CM_PER_INCH;
+//        System.out.println("Programming is not a spectator sport!");
 //        
-//        System.out.println("The initial value of centimeters is: " + centimeter);
-//        
-//        inches = 8;
-//        
-//        double newCentimeter = inches * CM_PER_INCH;
-//        System.out.println("Now since the inches is 8, the centimeters is: " + newCentimeter);
+//        System.exit(0);
         
-        double tempC, tempF;
-        
-        tempF = 80;
-        
-        double temp = (tempF - 32) * 5/9;
-        
-        System.out.println("The temperature of 80ºF is the equivalent to " + temp + "ºC");
-        
-        
+       // define the data we know
+       final double PI = 3.14159;
+       
+       //define other data we will use
+       double radius;
+       double area;
+       
+       //give radius a value
+       radius = 3.5;
+       
+       // perform the calculation
+       area = PI * radius * radius;
+       
+       //output the results
+       System.out.println("The area of the circle is " + area);
+       
     }
     
 }
