@@ -95,7 +95,66 @@ public class JavaIlluminated {
 //        
 //        System.out.println("Inches are " + inches + " & centimeters are " + centimeters);
 //        
+//        EXAMPLE 2.8
+//        final int PENNIES_PER_QUARTER = 25;
+//        int pennies = 113;
 //        
+//        int quarters = pennies / PENNIES_PER_QUARTER;
+//        System.out.println("There are " + quarters + " quarters in " + pennies + " pennies");
+//        
+//        int penniesLeftOver = pennies % PENNIES_PER_QUARTER;
+//        System.out.println("There are " + penniesLeftOver + " pennies left over");
+//        
+//        final double MONTHS_PER_YEAR = 12;
+//        double annualSalary = 50000.0;
+//        
+//        double monthlySalary = annualSalary / MONTHS_PER_YEAR;
+//        System.out.println("The monthly salary is " + monthlySalary);
+//        
+        //EXAMPLE 2.9
+        
+//        double result1 = 4.3 / 0.0;
+//        System.out.println("The value of result1 is " + result1);
+//        
+//        double result2 = 0.0 / 0.0;
+//        System.out.println("The value of result2 is " + result2);
+//        
+//        int result3 = 4 / 0;
+//        System.out.println("The value of result3 is " + result3);
+//        
+        
+        //EXAMPLE 2.10
+//        final double PI = 3.14159;
+//        int radius = 4;
+//        
+//        double area = PI * radius * radius;
+//        System.out.println("The area is " + area);
+//        
+//        int total = 365, count = 4;
+//        double average = total /count;
+//        System.out.println("\nPerforming integer division, ");
+//        System.out.println("The average test score is " + average);
+//        
+//        average = (double) (total / count);
+//        System.out.println("\nPerforming integer division, then explicit typecasting");
+//        System.out.println("The average test score is " + average);
+//                
+//        average = (double) total / count;
+//        System.out.println("\nTypecast one variable to double, then perform division");
+//        System.out.println("The average test score is " + average);
+//        
+        
+        //EXAMPLE 2.11
+        int a = 6;
+        int b = 2;
+        
+        System.out.println("At the beginning, a is " + a);
+        System.out.println("Increment with a prefix notation: " + ++a);
+        System.out.println("In the end a is : "+ a );
+        
+        System.out.println("At the beginning, a is " + b);
+        System.out.println("Increment with a postfix notation: " + b++);
+        System.out.println("In the end a is : "+ b );
         
         
         
