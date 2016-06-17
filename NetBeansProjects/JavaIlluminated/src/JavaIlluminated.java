@@ -87,15 +87,15 @@ public class JavaIlluminated {
 //        double mileage = miles / gallons;
 //        System.out.println("The mileage is " + mileage + " miles per gallon.");
 //        
-        final double CM_PER_INCH = 2.54;
-        
-        double inches = 34;
-        
-        double centimeters = (inches * CM_PER_INCH);
-        
-        System.out.println("Inches are " + inches + " & centimeters are " + centimeters);
-        
-        
+//        final double CM_PER_INCH = 2.54;
+//        
+//        double inches = 34;
+//        
+//        double centimeters = (inches * CM_PER_INCH);
+//        
+//        System.out.println("Inches are " + inches + " & centimeters are " + centimeters);
+//        
+//        
         
         
         
