@@ -145,16 +145,51 @@ public class JavaIlluminated {
 //        
         
         //EXAMPLE 2.11
-        int a = 6;
-        int b = 2;
+//        int a = 6;
+//        int b = 2;
+//        
+//        System.out.println("At the beginning, a is " + a);
+//        System.out.println("Increment with a prefix notation: " + ++a);
+//        System.out.println("In the end a is : "+ a );
+//        
+//        System.out.println("At the beginning, a is " + b);
+//        System.out.println("Increment with a postfix notation: " + b++);
+//        System.out.println("In the end a is : "+ b );
+//        
+//        int length = 3;
+//        length *= 12;
+//        System.out.println("I'm printing length *= 12" + length);
+//        
+//    
         
-        System.out.println("At the beginning, a is " + a);
-        System.out.println("Increment with a prefix notation: " + ++a);
-        System.out.println("In the end a is : "+ a );
+        //EXAMPLE 2.12
+//        int a = 5;
+//        System.out.println("a is " + a);
+//        
+//        a += 10;
+//        System.out.println("\nAfter a += 10; a is " + a );
+//        
+//        a -= 3;
+//        System.out.println("\nAfter a -= 3; a is " + a );
+//        
+//        a *= 2;
+//        System.out.println("\nAfter a *= 2; a is a " + a);
+//        
+//        a /= 6;
+//        System.out.println("\nAfter a /= 6; a is " + a );
+//        
+//        a %= 3;
+//        System.out.println("\nAfter a %= 3; a is " + a);
+//        
+//     
+        //EXAMPLE 2.13
         
-        System.out.println("At the beginning, a is " + b);
-        System.out.println("Increment with a postfix notation: " + b++);
-        System.out.println("In the end a is : "+ b );
+        int fahrenheit = 70;
+        float celcius = ((float) 5 / 9) * (fahrenheit - 32);
+        System.out.println("The celcius is " + celcius);
+        
+        fahrenheit = (int) (( 9 / 5 ) / (celcius + 32));
+        System.out.println("Double checking the fahrenheit " + fahrenheit);
         
         
         
