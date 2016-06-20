@@ -184,12 +184,18 @@ public class JavaIlluminated {
 //     
         //EXAMPLE 2.13
         
-        int fahrenheit = 70;
-        float celcius = ((float) 5 / 9) * (fahrenheit - 32);
-        System.out.println("The celcius is " + celcius);
-        
-        fahrenheit = (int) (( 9 / 5 ) / (celcius + 32));
-        System.out.println("Double checking the fahrenheit " + fahrenheit);
+//        int fahrenheit = 70;
+//        float celcius = ((float) 5 / 9) * (fahrenheit - 32);
+//        System.out.println("The celcius is " + celcius);
+//        
+//        fahrenheit = (int) (( 9 / 5 ) / (celcius + 32));
+//        System.out.println("Double checking the fahrenheit " + fahrenheit);
+//        
+       SimpleDate independenceDay;
+       independenceDay = new SimpleDate(7, 4, 1776);
+       
+       
+       
         
         
         
