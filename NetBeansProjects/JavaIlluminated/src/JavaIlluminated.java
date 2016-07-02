@@ -201,35 +201,26 @@ public class JavaIlluminated {
 //        String s4 = s1 + s2 + s3;
 //        System.out.println(s4);
 //        
-        String s = "Hello World";
-        int sLength = s.length();
-        System.out.println(sLength);
-        
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Enter your name: ");
-        String name = scan.nextLine();
-        System.out.println("Your name is " + name);
-        
-        String s1 = "Welcome ";
-        String s2 = "to ";
-        String s3 = "Java ";
-        String s4 = "Illuminated";
-        System.out.println(s1 + s2 + s3 + s4);
-        
-        System.out.print("\nWelcome");
-        System.out.print(" to");
-        System.out.print(" Java ");
-        System.out.print("Illuminated");
-        
-        
-        
-        
-        
-        
-        
-       
-        
-        
+//        String s = "Hello World";
+//        int sLength = s.length();
+//        System.out.println(sLength);
+//        
+//        Scanner scan = new Scanner(System.in);
+//        System.out.println("Enter your name: ");
+//        String name = scan.nextLine();
+//        System.out.println("Your name is " + name);
+//        
+//        String s1 = "Welcome ";
+//        String s2 = "to ";
+//        String s3 = "Java ";
+//        String s4 = "Illuminated";
+//        System.out.println(s1 + s2 + s3 + s4);
+//        
+//        System.out.print("\nWelcome");
+//        System.out.print(" to");
+//        System.out.print(" Java ");
+//        System.out.print("Illuminated");
+//        
         
     }
     
