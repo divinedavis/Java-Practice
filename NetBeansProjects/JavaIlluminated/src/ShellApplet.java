@@ -16,7 +16,7 @@ public class ShellApplet extends JApplet
     g.drawRect(20, 20, 200, 40);
     
     g.drawOval(80, 80, 120, 160);
-    
+    g.drawString("Hi, my name is Divine", 45, 78);
     
   }
 }
