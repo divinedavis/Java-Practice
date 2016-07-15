@@ -10,7 +10,7 @@ public class ComparingFloatingPoint
 
     // Part 1: Compute 11 * .1 two ways
     double d1 = .0; // add .1 to 0 eleven times
-    d1 += .1;  // 1
+    d1 += .1;  // 
     d1 += .1;  // 2
     d1 += .1;  // 3
     d1 += .1;  // 4
